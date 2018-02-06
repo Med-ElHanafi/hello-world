@@ -23,9 +23,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    
     
     barrier = [[UIView alloc] initWithFrame:CGRectMake(0, 300, 130, 20)];
     barrier.tag=2;

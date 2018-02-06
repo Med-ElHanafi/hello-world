@@ -20,7 +20,7 @@
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *rightP;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *leftS;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *rightS;
-- (IBAction)goBack:(id)sender;
+
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *topW;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *bottomW;
 

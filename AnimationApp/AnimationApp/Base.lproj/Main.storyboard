@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zjr-Kl-Eej">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ksq-L5-AOp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,126 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O5G-c2-fRG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2r-Yw-OvI">
-                                <rect key="frame" x="16" y="617" width="53" height="30"/>
-                                <state key="normal" title="Eat bird">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="animate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pCz-wD-YGM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Le-J2-jMQ">
-                                <rect key="frame" x="323" y="20" width="32" height="30"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4FJ-U4-AfI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gs3-mz-gzf">
-                                <rect key="frame" x="301" y="617" width="58" height="30"/>
-                                <state key="normal" title="Spit bird">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="restoreBird:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nhj-cw-ZJw"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="cGG-3o-0I7">
-                                <rect key="frame" x="0.0" y="20" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="BI1-Rc-dar"/>
-                                    <constraint firstAttribute="width" constant="40" id="QAo-uN-L9x"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O5G-c2-fRG" secondAttribute="trailing" id="4CF-Qk-ZG5"/>
-                            <constraint firstItem="cGG-3o-0I7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4iq-p4-pA2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gs3-mz-gzf" secondAttribute="trailing" constant="16" id="6EE-pP-602"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gs3-mz-gzf" secondAttribute="bottom" constant="20" id="6gA-Tf-WRM"/>
-                            <constraint firstItem="O5G-c2-fRG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9SO-oF-4is"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="V2r-Yw-OvI" secondAttribute="trailing" constant="20" symbolic="YES" id="Hwz-La-izI"/>
-                            <constraint firstItem="O5G-c2-fRG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IAy-yh-XbL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Le-J2-jMQ" secondAttribute="trailing" constant="20" id="KLT-s0-8eB"/>
-                            <constraint firstItem="9Le-J2-jMQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MCx-Rw-jDS"/>
-                            <constraint firstItem="V2r-Yw-OvI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aYf-GT-5nf"/>
-                            <constraint firstItem="cGG-3o-0I7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eVQ-oe-EyN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O5G-c2-fRG" secondAttribute="bottom" id="hnD-w3-eH7"/>
-                            <constraint firstItem="V2r-Yw-OvI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="k3Y-bi-g4d"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="w4g-Ju-3Sy"/>
-                    <connections>
-                        <outlet property="bird" destination="cGG-3o-0I7" id="s4r-S0-xy0"/>
-                        <outlet property="imageView" destination="O5G-c2-fRG" id="tul-oD-Tdn"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="372" y="32.833583208395808"/>
-        </scene>
-        <!--Tennis View Controller-->
-        <scene sceneID="Rs5-Ax-JWj">
-            <objects>
-                <viewController storyboardIdentifier="TennisViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AAp-8j-Oqf" customClass="TennisViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="y5a-Ig-HLE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="x5F-tP-Wjf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSi-9b-Ugq">
-                                <rect key="frame" x="271" y="637" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Right">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapRight:" destination="AAp-8j-Oqf" eventType="touchUpInside" id="LoU-m9-sgj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2h-bj-7Et">
-                                <rect key="frame" x="38" y="637" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Left">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapLeft:" destination="AAp-8j-Oqf" eventType="touchUpInside" id="XxQ-Uq-y3i"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="x5F-tP-Wjf" firstAttribute="top" secondItem="y5a-Ig-HLE" secondAttribute="top" id="9Sj-ud-DOv"/>
-                            <constraint firstItem="U3N-P3-mFf" firstAttribute="trailing" secondItem="x5F-tP-Wjf" secondAttribute="trailing" id="ew6-SZ-sOb"/>
-                            <constraint firstItem="U3N-P3-mFf" firstAttribute="bottom" secondItem="x5F-tP-Wjf" secondAttribute="bottom" id="k2y-zd-GxN"/>
-                            <constraint firstItem="x5F-tP-Wjf" firstAttribute="leading" secondItem="U3N-P3-mFf" secondAttribute="leading" id="vkJ-6B-hpA"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="U3N-P3-mFf"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6y6-gF-qL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="140" y="734"/>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="TSd-Fl-b3t">
             <objects>
@@ -170,16 +50,6 @@
                                     <segue destination="Nme-oc-HcX" kind="push" id="XEL-Q5-Gl9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPU-Cl-V5h">
-                                <rect key="frame" x="16" y="20" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="goBack:" destination="dGJ-oE-p4Q" eventType="touchUpInside" id="67k-ch-Axx"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -202,6 +72,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZRl-Vr-zr7"/>
                     </view>
+                    <navigationItem key="navigationItem" id="k5x-t3-Htt"/>
                     <connections>
                         <outlet property="bottomW" destination="5pU-NM-ifH" id="GUY-tQ-emy"/>
                         <outlet property="email" destination="y51-Wg-J3z" id="B52-dg-jHi"/>
@@ -219,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDM-eL-4fq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="32.833583208395808"/>
+            <point key="canvasLocation" x="1407.2" y="32.833583208395808"/>
         </scene>
         <!--Gravity View Controller-->
         <scene sceneID="wdy-s6-GOF">
@@ -250,29 +121,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kV8-yV-X1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="36.431784107946029"/>
+            <point key="canvasLocation" x="2135.1999999999998" y="36.431784107946029"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="b1c-7h-pso">
+        <scene sceneID="lR0-lK-4JK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Zjr-Kl-Eej" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Ksq-L5-AOp" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7ec-Mg-Ql9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LrF-pR-LPZ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="v30-ke-z9u"/>
+                        <segue destination="dGJ-oE-p4Q" kind="relationship" relationship="rootViewController" id="LTF-b1-5sZ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pk7-hf-sLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3s2-GX-KHT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-334" y="33"/>
+            <point key="canvasLocation" x="644" y="33"/>
         </scene>
     </scenes>
     <resources>
         <image name="bg" width="564" height="1183"/>
-        <image name="grass" width="246" height="205"/>
-        <image name="twitter" width="32" height="32"/>
     </resources>
 </document>

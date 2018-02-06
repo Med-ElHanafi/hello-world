@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		168D45AB2020CCD500549BD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 168D45AA2020CCD500549BD6 /* AppDelegate.m */; };
-		168D45AE2020CCD500549BD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168D45AD2020CCD500549BD6 /* ViewController.m */; };
 		168D45B12020CCD500549BD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168D45AF2020CCD500549BD6 /* Main.storyboard */; };
 		168D45B42020CCD500549BD6 /* AnimationApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 168D45B22020CCD500549BD6 /* AnimationApp.xcdatamodeld */; };
 		168D45B62020CCD500549BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 168D45B52020CCD500549BD6 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 		168D45D12020CCD500549BD6 /* AnimationAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 168D45D02020CCD500549BD6 /* AnimationAppUITests.m */; };
 		168D45E12021C0EF00549BD6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168D45E02021C0EF00549BD6 /* LoginViewController.m */; };
 		168D45E620220EF700549BD6 /* GravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168D45E520220EF600549BD6 /* GravityViewController.m */; };
-		168D45EA20232A7A00549BD6 /* TennisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168D45E920232A7A00549BD6 /* TennisViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +40,6 @@
 		168D45A62020CCD500549BD6 /* AnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		168D45A92020CCD500549BD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		168D45AA2020CCD500549BD6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		168D45AC2020CCD500549BD6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		168D45AD2020CCD500549BD6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		168D45B02020CCD500549BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		168D45B32020CCD500549BD6 /* AnimationApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnimationApp.xcdatamodel; sourceTree = "<group>"; };
 		168D45B52020CCD500549BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,8 +56,6 @@
 		168D45E02021C0EF00549BD6 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		168D45E420220EF600549BD6 /* GravityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GravityViewController.h; sourceTree = "<group>"; };
 		168D45E520220EF600549BD6 /* GravityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GravityViewController.m; sourceTree = "<group>"; };
-		168D45E820232A7A00549BD6 /* TennisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TennisViewController.h; sourceTree = "<group>"; };
-		168D45E920232A7A00549BD6 /* TennisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TennisViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +106,7 @@
 		168D45A82020CCD500549BD6 /* AnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				168D45E720232A6500549BD6 /* Tennis */,
 				168D45E320220ECF00549BD6 /* gravity */,
-				168D45E22021C0F600549BD6 /* Bird */,
 				168D45DE2021C0D500549BD6 /* Login */,
 				168D45A92020CCD500549BD6 /* AppDelegate.h */,
 				168D45AA2020CCD500549BD6 /* AppDelegate.m */,
@@ -155,15 +147,6 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		168D45E22021C0F600549BD6 /* Bird */ = {
-			isa = PBXGroup;
-			children = (
-				168D45AC2020CCD500549BD6 /* ViewController.h */,
-				168D45AD2020CCD500549BD6 /* ViewController.m */,
-			);
-			path = Bird;
-			sourceTree = "<group>";
-		};
 		168D45E320220ECF00549BD6 /* gravity */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,15 +154,6 @@
 				168D45E520220EF600549BD6 /* GravityViewController.m */,
 			);
 			path = gravity;
-			sourceTree = "<group>";
-		};
-		168D45E720232A6500549BD6 /* Tennis */ = {
-			isa = PBXGroup;
-			children = (
-				168D45E820232A7A00549BD6 /* TennisViewController.h */,
-				168D45E920232A7A00549BD6 /* TennisViewController.m */,
-			);
-			path = Tennis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,10 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				168D45AE2020CCD500549BD6 /* ViewController.m in Sources */,
 				168D45B42020CCD500549BD6 /* AnimationApp.xcdatamodeld in Sources */,
 				168D45BC2020CCD500549BD6 /* main.m in Sources */,
-				168D45EA20232A7A00549BD6 /* TennisViewController.m in Sources */,
 				168D45AB2020CCD500549BD6 /* AppDelegate.m in Sources */,
 				168D45E12021C0EF00549BD6 /* LoginViewController.m in Sources */,
 				168D45E620220EF700549BD6 /* GravityViewController.m in Sources */,

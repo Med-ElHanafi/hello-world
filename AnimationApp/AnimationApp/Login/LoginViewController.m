@@ -68,7 +68,4 @@
     _leftS.constant-=self.view.bounds.size.width;
     _rightS.constant+=self.view.bounds.size.width;
 }
-- (IBAction)goBack:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
 @end
